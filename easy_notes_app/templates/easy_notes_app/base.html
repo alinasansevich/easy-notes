@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'easy_notes_app/base-styles.css' %}">
+    
+    {% if title %}
+        <title>Easy Notes - {{ title }}</title>
+    {% else %}
+        <title>Easy Notes - Your notes go with you</title>
+    {% endif %}
+
+</head>
+<body>
+
+  <section class="header">
+    <p>Easy Notes</p>
+  </section>
+
+{% block content %}{% endblock content %}
+</body>
+</html> 
