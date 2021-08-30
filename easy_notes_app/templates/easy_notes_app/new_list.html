@@ -1,0 +1,15 @@
+{% extends "easy_notes_app/base.html" %}
+
+{% block content %}
+
+ 
+  <h3>Add a new list:</h3>
+
+    <form action="{% url 'easy_notes_app:new_list' %}" method='post'>
+      {% csrf_token %}
+      {{ form.as_p }} <!-- 'as_p' modifier: all form elements will be rendered in paragraph format  -->
+      <button name="submit">add new list</button>
+    </form>
+
+  
+{% endblock content %}

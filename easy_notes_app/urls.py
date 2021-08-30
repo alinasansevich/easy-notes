@@ -18,6 +18,10 @@ urlpatterns = [
     path('', views.index, name='index'),
     # About page
     path('about/', views.about, name='about'),
+    # Page for adding a new note
+    path('new_note/', views.new_note, name='new_note'),
+    # Page for adding a new list
+    path('new_list/', views.new_list, name='new_list'),
     # Board page
-    # path('board/', views.board, name='board'),
+    path('board/', views.board, name='board'),
     ]
