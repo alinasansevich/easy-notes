@@ -28,4 +28,6 @@ urlpatterns = [
     path('note/<int:note_id>', views.note, name='note'),
     # Page for editing a note
     path('edit_note/<int:note_id>', views.edit_note, name='edit_note'),
+    # Page to show a list
+    # path('lista/<int:lista_id>', views.lista, name='lista'),
     ]

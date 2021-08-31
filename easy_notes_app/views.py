@@ -3,7 +3,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 from .forms import NoteForm, ToDoListForm
-from .models import Note#, ToDoList
+from .models import Note, ToDoList
 
 def index(request):
     """The home page for Easy Notes."""
@@ -33,7 +33,11 @@ def note(request, note_id):
     return render(request, 'easy_notes_app/note.html', context) 
 
 
-
+# def lista(request, lista_id):
+#     """Show a single list."""
+#     lista = ToDoList.objects.get(id=lista_id)
+#     context = {'lista': lista}
+#     return render(request, 'easy_notes_app/lista.html', context) 
 
 
 

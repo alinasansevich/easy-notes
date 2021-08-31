@@ -2,25 +2,34 @@
 font-family: 'Karla', sans-serif;   --> text
 
 font-family: 'Raleway', sans-serif; --> titles
+
+#E0B0FF - Mauve - light
+#BC54FF - Mauve - medium
+#9600F7 - Mauve - medium-dark
+#5F009C - Mauve - dark
+
+#2F4F4F - Dark Slate gray
+#D3D3D3 - Light Gray 
+
  */
 
 
 
 html {
-  background-color: #A17188;
+  background-color: #E0B0FF;
 }
 body{
   font-family: 'Raleway', sans-serif;
 }
 /* change header for navbar */
 .header {
-  color: white;
+  color: #D3D3D3;
   font-family: 'Raleway', sans-serif;
   font-weight: 'bold';
-  background-color: black;
+  background-color: #2F4F4F;
 }
 .footer {
-  color: white;
+  color: #D3D3D3;
   font-family: 'Karla', sans-serif;
-  background-color: black;
+  background-color: #2F4F4F;
 }

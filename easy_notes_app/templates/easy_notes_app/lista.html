@@ -1,0 +1,25 @@
+{% extends "easy_notes_app/base.html" %}
+
+{% block content %}
+  
+  <p>Note: {{ lista.title }}</p> <!-- {{ topic }} is a "template variable", and it's available because it's in the context dict, from views.topic -->
+  
+  <p>{{ lista.date_added|date:'M d, Y H:i' }}</p>
+  
+  <ul>
+    {% for item in lista %}
+    <li>
+      <a href="{% url 'easy_notes_app:lista' lista.id %}">{{ item }}</a>
+    </li>
+    {% endfor %}
+  </ul>  
+  <!-- <p><a href="{% url 'easy_notes_app:edit_lista' note.id %}">edit list</a></p> -->
+  <div>
+    <a href="{% url 'easy_notes_app:index' %}">Home</a>
+  </div>
+
+{% endblock content %}
+
+
+<!-- lista, a ToDoList object, is not iterable
+     I need to rethink all this part of the project -->
