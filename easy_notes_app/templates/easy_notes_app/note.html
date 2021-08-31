@@ -1,0 +1,16 @@
+{% extends "easy_notes_app/base.html" %}
+
+{% block content %}
+  
+  <p>Note: {{ note.title }}</p> <!-- {{ topic }} is a "template variable", and it's available because it's in the context dict, from views.topic -->
+  
+  <p>{{ note.date_added|date:'M d, Y H:i' }}</p>
+  <p>{{ note.text|linebreaks }}</p>
+  <p><a href="{% url 'easy_notes_app:edit_note' note.id %}">edit note</a></p>
+  
+  <div>
+    <a href="{% url 'easy_notes_app:index' %}">Home</a>
+  </div>
+
+  
+{% endblock content %}

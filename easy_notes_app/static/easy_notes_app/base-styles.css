@@ -6,5 +6,10 @@ html {
 .header {
   color: white;
   background-color: black;
-  padding: 10px;
+  padding: 50px;
+}
+.footer {
+  color: white;
+  background-color: black;
+  padding: 50px;
 }

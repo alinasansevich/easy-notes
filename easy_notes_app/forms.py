@@ -16,9 +16,10 @@ class NoteForm(forms.ModelForm):
         fields = ['title',
                   'text',
                   ]
-        labels = {'Give your note a title': '',
-                  'Enter note here': '',
+        labels = {'title': 'Title',
+                  'text': '',
                   }
+        widgets = {'text': forms.Textarea(attrs={'cols': 80})}
 
 
 class ToDoListForm(forms.ModelForm):
