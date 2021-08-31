@@ -4,6 +4,25 @@
 
  
   <p>Add some text here.</p>
+  
+  
+  {% load static %}
+  <img src="{% static 'easy_notes_app/kyle-glenn-kvIAk3J_A1c-unsplash.jpg' %}"
+       alt="Messy sticky notes board"
+       weight='400'
+       height='300'>
+  <img src="{% static 'easy_notes_app/leonie-christine-JGJ51l7Uh_E-unsplash.jpg' %}"
+       alt="Walking with backpack in a cactus shop"
+       weight='400'
+       height='300'>
 
-  <a href="{% url 'easy_notes_app:index' %}">Home</a>
+  <div>
+    Photo by <a href="https://unsplash.com/@kylejglenn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kyle Glenn</a> on <a href="https://unsplash.com/s/photos/sticky-notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    Photo by <a href="https://unsplash.com/@leoniechristine_visuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leonie Christine</a> on <a href="https://unsplash.com/s/photos/walking-city-backpack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+  
+  </div>
 {% endblock content %}
+
+
+

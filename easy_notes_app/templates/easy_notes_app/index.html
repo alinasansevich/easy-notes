@@ -6,6 +6,28 @@
   <p>Your notes go with you.</p>
   
   <a href="{% url 'easy_notes_app:notes' %}">Go to your board</a>
+  
+  
+  {% load static %}
+  <img src="{% static 'easy_notes_app/jesus-hilario-h-5v69Vl62NCM-unsplash.jpg' %}"
+       alt="Messy desktop"
+       weight='400'
+       height='300'>
+  <img src="{% static 'easy_notes_app/jeff-sheldon-mKxdiW2QEkE-unsplash.jpg' %}"
+       alt="Tidy desktop"
+       weight='400'
+       height='300'>       
+    
+  
+  
+  
+  
+  
+  <div>
+    Photo by <a href="https://unsplash.com/@jesushilarioh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jesus Hilario H.</a> on <a href="https://unsplash.com/s/photos/messy-desktop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    Photo by <a href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Sheldon</a> on <a href="https://unsplash.com/s/photos/tidy-desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </div>
 
+  
   
 {% endblock content %}
