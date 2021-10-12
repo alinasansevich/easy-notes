@@ -7,8 +7,8 @@
     <form action="{% url 'easy_notes_app:edit_note' entry.id %}" method='post'>
       {% csrf_token %}
       {{ form.as_p }} <!-- 'as_p' modifier: all form elements will be rendered in paragraph format  -->
-      <button name="submit">Save Changes</button>
-      
+
+      <button type="button" class="btn btn-primary" name="submit">Save Changes</button>
       <a href="{% url 'easy_notes_app:notes' %}">Go back</a>
     </form>
         

@@ -9,6 +9,7 @@
       {% csrf_token %}
       {{ form.as_p }} <!-- 'as_p' modifier: all form elements will be rendered in paragraph format  -->
       <button name="submit">add new note</button>
+      <a href="{% url 'easy_notes_app:notes' %}">Go back</a>
     </form>
 
   
