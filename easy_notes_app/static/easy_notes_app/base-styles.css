@@ -35,3 +35,15 @@ body{
   font-family: 'Karla', sans-serif;
   background-color: #2F4F4F;
 }
+
+.footer-icons {
+  font-size: 11px;
+}
+
+.footer-icons a {
+  text-decoration: none;
+}
+
+.copyright {
+  text-decoration: none;
+}
