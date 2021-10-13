@@ -25,54 +25,52 @@
   
   </head>
   <body>
-
-  <nav class="navbar navbar-dark bg-dark">
-    <!-- Navbar content -->
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{% url 'easy_notes_app:index' %}">Easy Notes</a>
-    </div>
-  </nav>
-
+  <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+      <!-- Navbar content -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'easy_notes_app:index' %}">Easy Notes</a>
+      </div>
+    </nav>
+  <!-- Navbar -->
   
   {% block content %}{% endblock content %}
   
   <!-- Footer -->
-  <footer class="text-left text-lg-start text-white"
-          style="background-color: #3e4551">
-  {% load static %}
+  <footer class="bg-dark text-center text-white">
+    {% load static %}
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4 text-center">
+        <!-- Linkedin -->
+        <a class="btn btn-floating m-1"
+           href="https://www.linkedin.com/in/alina-sansevich-070b6159/"
+           role="button">
+           <img src="{% static 'easy_notes_app/white-linkedin-icon-text-label-symbol-number-transparent-png-2024887.png' %}" alt="LinkedIn logo" width="32" height="32">
+           </a>
+        <!-- Github -->
+        <a class="btn btn-floating m-1"
+           href="https://github.com/alinasansevich/easy-notes"
+           role="button">
+           <img src="{% static 'easy_notes_app/GitHub-Mark-Light-32px.png' %}" alt="GitHub Mark Light">
+           </a>
+      </section>
     <!-- Section: Social media -->
-    <section class="mb-4 text-center">
-      <!-- Linkedin -->
-      <a class="btn btn-floating m-1"
-         href="https://www.linkedin.com/in/alina-sansevich-070b6159/"
-         role="button">
-         <img src="{% static 'easy_notes_app/32.png' %}" alt="LinkedIn logo">
-         </a>
-      <!-- Github -->
-      <a class="btn btn-floating m-1"
-         href="https://github.com/alinasansevich/easy-notes"
-         role="button">
-         <img src="{% static 'easy_notes_app/GitHub-Mark-Light-32px.png' %}" alt="GitHub Mark Light">
-         </a>
-    </section>
-    <!-- Section: Social media -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3"
-         style="background-color: rgba(0, 0, 0, 0.2)">© 2021 Copyright:
-      <a class="text-white copyright" href="https://github.com/alinasansevich/easy-notes"
-         >Alina Sansevich | MIT License</a>
-      <div class="footer-icons text-right py-3">Icons made by: <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-      </div>
     </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+      <div class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)">© 2021 Copyright:
+        <a class="text-white copyright" href="https://github.com/alinasansevich/easy-notes"
+           >Alina Sansevich | MIT License</a>
+      </div>
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Optional JavaScript; Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
   </body>
 </html>

@@ -1,71 +1,40 @@
 {% extends "easy_notes_app/base.html" %}
 
 {% block content %}
-
-  <section>
-    <div>
-      <p>Your notes go with you.</p>
-    
-      <p>Tidy up your workspace</p>
-      <p>Notes, to-do lists, reminders...</p>
-      <p>Manage your workspace easily</p>
-      <p>No more clutter in your fridge!</p>
-    </div>
-    <div>
-      {% load static %}
-      <img src="{% static 'easy_notes_app/absolutvision-82TpEld0_e4-unsplash.jpg' %}"
-           alt="Idea note pined on a board."
-           weight='400'
-           height='300'> 
+  <div class="container my-5">
+  	<div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+  		<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+  			<div class="lc-block mb-3">
+  				<div editable="rich">
+  					<h2 class="fw-bold display-4">Easy Notes&nbsp;<p></p>
+  						<h3>Your notes go with you.</h3>
+  					</h2>
+  				</div>
+  			</div>
   
-      <p>
-        Turn this into a button! -->
-        <a href="{% url 'easy_notes_app:notes' %}">Go to your board</a>
-      </p>
-    </div>
-
-    
-
-
-  </section>
-  <section>
-    <div>
-      <p>Easy Notes helps you to manage your work area, so you can go from this...</p>
-      {% load static %}    
-      <img src="{% static 'easy_notes_app/jesus-hilario-h-5v69Vl62NCM-unsplash.jpg' %}"
-           alt="Messy desktop"
-           weight='400'
-           height='300'>
-    </div>
-    <div>
-      <p>...to something more like this:</p>
-      {% load static %}
-        <img src="{% static 'easy_notes_app/jeff-sheldon-mKxdiW2QEkE-unsplash.jpg' %}"
-             alt="Tidy desktop"
-             weight='400'
-             height='300'>
-    </div>
-  </section>
+  			<div class="lc-block mb-3">
+  				<div editable="rich">
+  					<p class="lead">Tidy up your workspace<br>
+                        Notes, to-do lists, reminders...<br>
+                        Manage your workspace easily<br>
+                        No more clutter in your fridge!<br>                      
+  					</p>
+  				</div>
+  			</div>
   
-  <section>
-    <p>Get in touch!</p>
-  </section>
-  
-       
-    
-  
-  
-  
-  
-  
-  <div>
-    Photo by <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
-  
-    Photo by <a href="https://unsplash.com/@jesushilarioh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jesus Hilario H.</a> on <a href="https://unsplash.com/s/photos/messy-desktop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    Photo by <a href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Sheldon</a> on <a href="https://unsplash.com/s/photos/tidy-desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="{% url 'easy_notes_app:notes' %}" role="button">Go to your board</a>
+  				<a class="btn btn-outline-secondary px-4" href="{% url 'easy_notes_app:about' %}" role="button">About this app</a>
+  			</div>
+  		</div>
+  		<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+  			<div class="lc-block">
+  			{% load static %}	
+              <img src="{% static 'easy_notes_app/absolutvision-82TpEld0_e4-unsplash.jpg' %}"
+                   alt="Idea note pined on a board."
+                   weight='500'
+                   height='375'>
+            </div>
+  		</div>
+  	</div>
   </div>
-
-  
-  
 {% endblock content %}
