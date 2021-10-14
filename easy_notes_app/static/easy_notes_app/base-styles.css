@@ -15,6 +15,19 @@ https://www.htmlcsscolor.com/hex/2F4F4F --> get different shades of dark slate g
 
  */
 
+.icons p {
+  margin-bottom: 0;
+}
+
+.icons {
+  color: gray;
+  font-size: 12px;
+}
+
+.icons a {
+  color: gray;
+  text-decoration: none;
+}
 /*
 
 html {

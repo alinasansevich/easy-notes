@@ -3,7 +3,7 @@
 {% block content %}
 
   {% load static %}
-
+  <!--First section-->
   <div class="container col-xxl-8 px-4 py-5">
   	<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
   		<div class="col-10 col-sm-8 col-lg-6">
@@ -18,7 +18,8 @@
   		</div>
   	</div>
   </div>
-  
+  <!--First section-->
+  <!--Second section-->
   <div class="container col-xxl-8 px-4 py-5">
   	<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
   		<div class="col-10 col-sm-8 col-lg-6">
@@ -33,83 +34,59 @@
   		</div>
   	</div>
   </div>
+  <!--Second section-->
+  <!--Third section-->
+  <div class="container-fluid px-4 py-5 my-5 text-center">
+  	<div class="lc-block d-block mx-auto mb-4">
 
-  <section>
-    <div>
-
-      {% load static %}    
-  <img src="{% static 'easy_notes_app/leave-clutter-behind.png' %}"
-       alt="Walking with backpack in a cactus shop"
-       weight='400'
-       height='300'>
+  		{% load static %}    
+        <img src="{% static 'easy_notes_app/leave-clutter-behind.png' %}"
+             alt="Walking with backpack in a cactus shop"
+             weight='300'
+             height='225'>
+  	</div>
+  	<div class="lc-block">
+  		<div editable="rich">
+  
+  			<h2 class="display-5 fw-bold">EasyNotes is a web-based sticky notes tool that lets you easily add notes on a digital board.</h2>
+  
+  		</div>
+  	</div>
+  	<div class="lc-block col-lg-6 mx-auto mb-4">
+  		<div editable="rich">
+  			<p class="lead ">
+              Give a title to your notes, write them as just text or as a to-do list.
+              It keeps all your notes listed so you can quickly see the contents of each one and find the one you want.</p>
+            <p class="lead ">
+              Incorporate EasyNotes into your workflow for study or work, keep all your notes organized in one virtual board
+              and take them with you wherever you go. Leave all clutter behind.</p>
+  		</div>
+  	</div>
+  
+  	<div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center"> <a class="btn btn-primary btn-lg px-4 gap-3" href="{% url 'easy_notes_app:notes' %}" role="button">Go to your board</a>
+  		<a class="btn btn-outline-secondary btn-lg px-4" href="{% url 'easy_notes_app:index' %}" role="button">Home</a>
+  	</div>
+  </div>
+  <!--Third section-->
+  <div class="text-left">
+    <div class="container p-4 pb-0">
+      <!-- Section: Credits -->
+      <section class="mb-4 text-left icons">
+        <div class="icons">
+          <p>
+            Icons made by: <a href="https://www.freepik.com" title="Freepik">Freepik</a>: <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> |
+              <a href="https://www.flaticon.com/authors/google" title="Google">Google</a>: <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>    
+          </p>
+          <p>
+            Photos by: <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a>: <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> | 
+            <a href="https://unsplash.com/@jesushilarioh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jesus Hilario H.</a>: <a href="https://unsplash.com/s/photos/messy-desktop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> | 
+            <a href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Sheldon</a>: <a href="https://unsplash.com/s/photos/tidy-desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> |
+            <a href="https://unsplash.com/@kylejglenn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kyle Glenn</a>: <a href="https://unsplash.com/s/photos/sticky-notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> |
+            <a href="https://unsplash.com/@leoniechristine_visuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leonie Christine</a>: <a href="https://unsplash.com/s/photos/walking-city-backpack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+          </p>
+        </div>
+      </section>
     </div>
-
-  </section> 
-
-
-<div class="container-fluid px-4 py-5 my-5 text-center">
-	<div class="lc-block d-block mx-auto mb-4">
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="5em" height="5em" lc-helper="svg-icon" fill="currentColor">
-			<path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
-		</svg>
-	</div>
-	<div class="lc-block">
-		<div editable="rich">
-
-			<h2 class="display-5 fw-bold">EasyNotes is a web-based sticky notes tool that lets you easily add notes on a digital board.</h2>
-
-		</div>
-	</div>
-	<div class="lc-block col-lg-6 mx-auto mb-4">
-		<div editable="rich">
-
-			<p class="lead ">
-            You can give a title to your notes, write them in a text field or add a bullet list.
-It keeps all your notes listed so you can quickly see the contents of the note and find the one you want.
-
-You can incorporate EasyNotes into your workflow for study or work, increasing your productivity and eliminating procrastination.
-keep all your notes organized in one virtual board, take them with you, and enjoy your day!
-
-Leave all clutter behind.
-            </p>
-
-		</div>
-	</div>
-
-	<div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center"> <a class="btn btn-primary btn-lg px-4 gap-3" href="#" role="button">Click me, I'm a button</a>
-		<a class="btn btn-outline-secondary btn-lg px-4" href="#" role="button">Click me, I'm a button</a>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
- 
-  
-
-
-  <div class="icons">
-    <p>
-      Icons made by: <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and
-        <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>    
-    </p>
-    <p>
-      Photos by <a href="https://unsplash.com/@freegraphictoday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">AbsolutVision</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>, 
-      <a href="https://unsplash.com/@jesushilarioh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jesus Hilario H.</a> on <a href="https://unsplash.com/s/photos/messy-desktop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> and 
-      <a href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Sheldon</a> on <a href="https://unsplash.com/s/photos/tidy-desk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      <a href="https://unsplash.com/@kylejglenn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kyle Glenn</a> on <a href="https://unsplash.com/s/photos/sticky-notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      <a href="https://unsplash.com/@leoniechristine_visuals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Leonie Christine</a> on <a href="https://unsplash.com/s/photos/walking-city-backpack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-    </p>
-
   </div>
 {% endblock content %}
 
