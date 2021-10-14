@@ -15,16 +15,16 @@ https://www.htmlcsscolor.com/hex/2F4F4F --> get different shades of dark slate g
 
  */
 
-
+/*
 
 html {
   background-color: #E0B0FF;
 }
 body{
   font-family: 'Raleway', sans-serif;
-  background-color: #292b2c;
+  background-color: #E0B0FF; #292b2c;
 }
-/* change header for navbar */
+ change header for navbar 
 .header {
   color: #D3D3D3;
   font-family: 'Raleway', sans-serif;
@@ -47,4 +47,4 @@ body{
 
 .copyright {
   text-decoration: none;
-}
+}*/
